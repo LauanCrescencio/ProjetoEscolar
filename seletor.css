@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+nav {
+    background-color: rgba(223, 223, 223, 0.555);
+    height: 10vh;
+    text-align: center;
+    font-size: 3em;
+    box-shadow: 14px 1px 7px 1.5px rgba(0, 0, 0, 0.308);;
+}
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-attachment: fixed;
+    background-image: linear-gradient(-65deg, rgb(0, 0, 255), rgb(135, 206, 235));
+    color: rgb(6, 38, 145);
+}
+div#outside > h2 {
+    text-align: center;
+    margin-top: 7px;
+    font-size: 3em;
+    color: white;
+}
+div {
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 4px 7px 10px 1.5px rgba(0, 0, 0, 0.5);
+}
+div#outside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(-65deg, rgb(53, 53, 235), rgba(135, 207, 235, 0.767));
+    width: 750px;
+    height: 500px;
+}
+div#inside1 {
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-105%, -47.7%);
+}
+div#inside2 {
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    padding: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(5%, -66%);
+}
+h1#seletor {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 3em;
+}
+img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: rgb(14, 49, 165);
+}
+div#inside1:hover , div#inside2:hover {
+    width: 215px;
+    height: 265px;
+    transition-duration: 0.8s;
+}
+footer {
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -99%);
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Escolar</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav>
+        <h1>Faça seu login aluno!</h1>
+    </nav>
+    <div id="outside">
+        <h2>Preencha os campos abaixo</h2>
+        <form>
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula"><br><br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password"><br><br>
+        </form>
+        <button onclick="newpage()">Entrar</button>
+    </div>
+<script>
+    function newpage(){
+        var password = Number(document.getElementById("password").value)
+        var matricula = Number(document.getElementById("matricula").value)
+        if (matricula == 0 || password == 0) { 
+            window.alert('[ERRO] Preencha todos os dados abaixo!')
+        } else {
+            window.location.href = '#' // A definir
+    }
+} 
+</script>
+</body>
+</html>
