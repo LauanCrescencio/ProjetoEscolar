@@ -18,6 +18,14 @@ body {
     background-attachment: fixed;
     background-image: linear-gradient(-65deg, rgb(0, 0, 255), rgb(135, 206, 235));
 }
+div.help{
+    display: inline;
+    padding: 2px;
+    cursor: pointer;
+}
+    div.help:hover{
+        background-color: rgba(255, 255, 255, 0.267);
+    }
 div {
     border-radius: 20px;
     position: relative;
@@ -52,7 +60,6 @@ input {
     border-radius: 20px;
     width: 350px;
     height: 30px;
-    margin: 0;
     border: none;
 }
 button {
@@ -74,4 +81,27 @@ button:hover {
     width: 510px;
     height: 80px;
     transition-duration: 0.8s;
+}
+@media (max-width: 700px) {
+    nav {
+        height: 6vh;
+        font-size: 1.5em;
+        padding: 15px;
+    }
+    div#outside {
+        width: 475px;
+        height: 500px;
+    }
+    button {
+        width: 450px;
+        height: 75px;
+        font-size: 1.5em;
+    } 
+        button:hover {
+            width: 475px;
+            height: 80px;
+        }
+    form {
+        margin-top: 45px;
+    }        
 }
