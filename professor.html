@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Escolar</title>
+    <link rel="stylesheet" href="aluno.css">
+</head>
+<body onload="name()">
+    <nav>
+        <h1 id="title">ALUNO:</h1>
+    </nav>
+    <table id="table">
+        <thead> 
+            <tr>
+                <th class="bimestre">Bimestre</th>
+                <th>Português</th>
+                <th>Matemática</th>
+                <th>Ciência</th>
+                <th>Inglês</th>
+                <th>Geografia</th>
+                <th>História</th>
+            </tr>  
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bimestre">1°</td>
+                <td id="a1">0</td>
+                <td id="a2">0</td>
+                <td id="a3">0</td>
+                <td id="a4">0</td>
+                <td id="a5">0</td>
+                <td id="a6">0</td>
+            </tr>
+            <tr>
+                <td class="bimestre">2° </td>
+                <td id="b1">0</td>
+                <td id="b2">0</td>
+                <td id="b3">0</td>
+                <td id="b4">0</td>
+                <td id="b5">0</td>
+                <td id="b6">0</td>
+            </tr>
+            <tr>
+                <td class="bimestre">3°</td>
+                <td id="c1">0</td>
+                <td id="c2">0</td>
+                <td id="c3">0</td>
+                <td id="c4">0</td>
+                <td id="c5">0</td>
+                <td id="c6">0</td>
+            </tr>
+            <tr>
+                <td class="bimestre">4°</td>
+                <td id="d1">0</td>
+                <td id="d2">0</td>
+                <td id="d3">0</td>
+                <td id="d4">0</td>
+                <td id="d5">0</td>
+                <td id="d6">0</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Bimestre:</p> <input type="number" name="" id="bimestre" > 
+    <button onclick="select()">Selecionar</button>
+    <button onclick="clean()">Limpar</button>
+    <div id="res"></div>
+    <script src="professor.js"></script>
+</body>
+</html>
