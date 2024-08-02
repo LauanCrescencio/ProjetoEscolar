@@ -10,7 +10,7 @@ nav {
     height: 10vh;
     width: 100%;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     box-shadow: 14px 1px 7px 1.5px rgba(0, 0, 0, 0.308);
     color: rgb(6, 38, 145);
 }
@@ -42,4 +42,110 @@ th {
 td {
     padding: 20px;
     color: white;
+}
+form {
+    margin-top: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(6, 38, 145);
+    font-weight: bolder;
+    font-size: 20px;
+}
+input {
+    text-align: center;
+    width: 375px;
+    height: 30px;
+    border-radius: 20px;
+    border-color: transparent;
+    box-shadow: 5px 1px 7px 1.5px rgba(0, 0, 0, 0.308);
+}
+button {
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: transparent;
+    font-size: 17px;
+    color: rgb(6, 38, 145);
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 5px 1px 7px 1.5px rgba(0, 0, 0, 0.308);
+}
+button:hover {
+    width: 310px;
+    height: 60px;
+    transition-duration: 0.8s;
+}
+button#select {
+    position: absolute;
+    top: 65%;
+    margin-left: 100px;
+}
+button#clean {
+    position: absolute;
+    top: 65%;
+    right: 0%;
+    margin-right: 100px;
+}
+button#exit {
+    width: 500px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+} 
+    button#exit:hover {
+        width: 510px;
+        height: 60px;
+        transition-duration: 0.8s;
+    }
+@media (max-width: 770px) {
+    nav {
+        height: 6vh;
+        font-size: 1em;
+        padding: 15px;
+    }
+    button {
+        width: 150px;
+        height: 25px;
+        font-size: 1em;
+    }
+    button#select {
+        margin-left: 50px;
+        top: 75%;
+    }
+    button#clean{
+        margin-right: 50px;
+        top: 75%;
+    }
+    button#exit {
+        width: 300px;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    button#exit:hover {
+        height: 30px;
+        width: 310px;
+    }
+        button:hover {
+            width: 160px;
+            height: 30px;
+        }
+
+    input {
+        width: 150px;
+        height: 25px;
+    }
+    form {
+        font-size: 1em;
+        top: 62%;
+    }
+    th {
+        font-size: 1em;
+    } 
+    .bimestre {
+        font-size: 1em;
+    }
 }

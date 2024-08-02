@@ -61,10 +61,13 @@
             </tr>
         </tbody>
     </table>
-    <p>Bimestre:</p> <input type="number" name="" id="bimestre" > 
-    <button onclick="select()">Selecionar</button>
-    <button onclick="clean()">Limpar</button>
-    <div id="res"></div>
+    <form>
+        <label for="bimestre">Bimestre:</label>
+        <input type="number" name="bimestre" id="bimestre" max="4" min="1" >
+    </form>
+    <button onclick="select()" id="select">Selecionar</button>
+    <button onclick="clean()" id="clean">Limpar</button>
+    <button onclick="exit()" id="exit">Sair</button>
     <script src="professor.js"></script>
 </body>
 </html>

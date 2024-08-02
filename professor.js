@@ -3,9 +3,9 @@ function name() {
     var name = window.prompt('Qual o nome do aluno?')
     tit.innerHTML = `ALUNO: ${name.toUpperCase()}`
 }
+
 function select() {
     var bimestre = Number(document.getElementById('bimestre').value)
-    var res = document.getElementById('res')
     var materias = ['Português', 'Matemática', 'Ciência', 'Inglês', 'Geografia', 'História']
     switch(bimestre) {
         case 1:
@@ -65,11 +65,13 @@ function clean() {
         case 4: 
         prefixoid = 'd'
         break
-        default: 
-        window.alert('[ERRO] Bimestre inválido!')
+        default:
         return
     }
     for (var i = 1; i<=6; i++) {
         document.getElementById(`${prefixoid}${i}`).innerHTML = 0
     }
+}
+function exit() {
+    window.location.href = 'index.html'
 }
